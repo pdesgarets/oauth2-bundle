@@ -29,4 +29,12 @@ final class ScopeManager implements ScopeManagerInterface
     {
         $this->scopes[(string) $scope] = $scope;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function list(): array
+    {
+        return $this->scopes;
+    }
 }
